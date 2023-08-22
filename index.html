@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">mrkgraphics</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#whatido">What I Do?</a></li> <!-- Changed the order -->
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">mrkgraphics</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#whatido" onclick="toggleMenu()">What I Do?</a></li> <!-- Changed the order -->
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+    <section id="profile">
+      <div class="section__pic-container">
+        <video autoplay loop muted oncontextmenu="return false;">
+          <source src="https://drive.google.com/uc?id=1Ot1eEJrfRMTBZqSVpZnJ65LLJpPrVZZH&export=download" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Blurring the line between art and technology</p>
+        <h1 class="title">MEET YOUR NEXT</h1>
+        <p class="section__text__p2">
+          <span class="typed-text"></span>
+          <span class="cursor"></span>
+        </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <a href="https://www.linkedin.com/in/mark-saladino/" target="_blank">
+            <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" />
+          </a>
+          <a href="https://www.behance.net/marksaladino" target="_blank">
+            <img src="./assets/behance.png" alt="My Behance profile" class="icon" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About ME -->
+
+    <section id="about">
+      <p class="section__text__p1">A BIT CONCEPT</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <video autoplay loop muted oncontextmenu="return false;">
+            <source src="https://drive.google.com/uc?id=1XJSLDN8yCYaCHOUABRjVRTHlvQtLRvVZ&export=download" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p2>5+ years <br />Junior Graphic Designer</p2>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p2>Bachelor of Science in Computer Engineering</p2>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hey, I'm Mark! A Junior Graphic Designer with five years of design experience, plus two years leading creative teams as a Creative Manager. My joy lies in transforming ideas into visual wonders. Whether it's crafting logos or directing campaigns, I specialize in designs that leave a lasting impact. <br>
+              <br>
+              Looking for a professional partner who brings both happiness and expertise to the table? Look no further. Let's collaborate and elevate your vision to new heights!
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#whatido'"
+      />
+    </section>
+
+    <!-- What I Do? -->
+
+    <section id="whatido">
+      <p class="section__text__p1">TO VERY REAL GOALS</p>
+      <h1 class="title">I Provide Solutions</h1>
+      <div class="whatido-container">
+        <div class="text-container">
+          <div class="image-top">
+            <img src="./assets/1.png" alt="Small Image">
+          </div>
+          <p class="exploration">Exploration</p>
+          <p class="text">
+            Your awesome project, cool ideas, and gut feelings are where the magic begins. 
+            I'm here to hear you out and get your business model. 
+            'Cause seriously, turning an idea into reality? That's where the real fun starts.
+          </p>
+        </div>
+        <div class="image-container">
+          <video autoplay loop muted oncontextmenu="return false;" width="250" height="250">
+            <source src="https://drive.google.com/uc?id=1JBjTfmee2Zb9V6J2FX0vjGd-WpqDllKA&export=download" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    
+      <!-- Second section with text container on the right and image container on the left -->
+      <div class="whatido-container reversed">
+        <div class="text-container">
+          <div class="image-top">
+            <img src="./assets/2.png" alt="Small Image">
+          </div>
+          <p class="exploration">UX Game Plan</p>
+          <p class="text">
+            Now, let's get real. Time to find answers and score those goals. 
+            We'll sketch, write, 
+            and jazz things up, making sure your style shines through in the design.
+          </p>
+        </div>
+        <div class="image-container">
+          <video autoplay loop muted oncontextmenu="return false;" width="250" height="250">
+            <source src="https://drive.google.com/uc?id=1_kIDbE_EbBqs5KysOYwLi-h-1-D3qehB&export=download" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    
+      <!-- Third section identical to section 1 -->
+      <div class="whatido-container">
+        <div class="text-container">
+          <div class="image-top">
+            <img src="./assets/3.png" alt="Small Image">
+          </div>
+          <p class="exploration">Design Vibes</p>
+          <p class="text">
+            Alright, we've got the groundwork set. Ready to make something super unique? 
+            It's time to jazz up the design and create a galaxy that's all our own. 
+            No blending in – we're aiming to stand out!
+          </p>
+        </div>
+        <div class="image-container">
+          <video autoplay loop muted oncontextmenu="return false;" width="250" height="250">
+            <source src="https://drive.google.com/uc?id=14Z6a63Z93Z35sGU-uct0ziuEl1uuVYo7&export=download" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    
+      <!-- Fourth section identical to section 2 -->
+      <div class="whatido-container reversed">
+        <div class="text-container">
+          <div class="image-top">
+            <img src="./assets/4.png" alt="Small Image">
+          </div>
+          <p class="exploration">Mission Accomplished!</p>
+          <p class="text">
+            Last but not least, we do the final once-over, making sure everything's clicking perfectly. 
+            Guess what? Your project's a solid hit, built to go the distance. 
+            And hey, let's celebrate – we've got a lot to cheer about! 🥂
+          </p>
+        </div>
+        <div class="image-container">
+          <video autoplay loop muted oncontextmenu="return false;" width="250" height="250">
+            <source src="https://drive.google.com/uc?id=1l_JbnzpTvwkipjsPw9zYzE5U3_Op0sK3&export=download" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Design Tools</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/Ps.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Adobe Photoshop</h3>
+                  <p2>Experienced</p2>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/Ai.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Adobe Illustrator</h3>
+                  <p2>Experienced</p2>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/Xd.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3> Adobe XD</h3>
+                  <p2>Experienced</p2>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/Figma.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Figma</h3>
+                  <p2>Experienced</p2>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/Canva.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Canva</h3>
+                  <p2>Experienced</p2>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/Descript.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Descript</h3>
+                  <p2>Intermediate</p2>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Management Tools</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/Monday.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Monday.com</h3>
+                  <p2>Experienced</p2>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/Trello.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Trello</h3>
+                  <p2>Experienced</p2>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/Miro.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Miro</h3>
+                  <p2>Intermediate</p2>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/Asana.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Asana</h3>
+                  <p2>Intermediate</p2>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+     
+    <!-- Projects -->  
+
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+
+    <!--Logo Designs-->
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <video class="project-video" autoplay loop muted oncontextmenu="return false;" width="250" height="250">
+                <source src="https://drive.google.com/uc?id=1KlXFGcnUVCr-0Pw35SNN3cWGbRn01nfd&export=download" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            </div>
+            <h2 class="experience-sub-title project-title">Logo Designs</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Behance
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="window.open('https://drive.google.com/drive/folders/1CRAM-cn_YGVuy48FhSKgALyTiWCVVm5z?usp=drive_link', '_blank');">
+                Google Drive
+            </button>
+            </div>
+          </div>
+
+    <!--Ui/Ux Web Designs-->
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <video class="project-video" autoplay loop muted oncontextmenu="return false;" width="250" height="250">
+                <source src="https://drive.google.com/uc?id=14oH6Aern1_Lr_StT3PwCZoPHh4jS6Qt6&export=download" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            </div>
+            <h2 class="experience-sub-title project-title">Ui/Ux Web Designs</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Behance
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="window.open('https://drive.google.com/drive/folders/1ovo3o28mI2TZFb7NeF9qjr0dPrzpwkgl?usp=drive_link', '_blank');">
+                Google Drive
+            </button>
+            </div>
+          </div>
+
+    <!--SocMed Designs-->
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <video class="project-video" autoplay loop muted oncontextmenu="return false;" width="250" height="250">
+                <source src="https://drive.google.com/uc?id=1v2GRhG5SHAx2xYalXE2uYdzoaiWBLiUt&export=download" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            </div>
+            <h2 class="experience-sub-title project-title">SocMed Designs</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Behance
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="window.open('https://drive.google.com/drive/folders/1tzTMKNc7v4oM1m057q2kYma6-BB9jouW?usp=drive_link', '_blank');">
+                Google Drive
+            </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <p class="button-text">
+          Would you like to see more of my work?<br>
+          Visit my Behance profile and my Google Drive for the complete collection.
+        </p>
+        <div class="buttons-wrapper">
+          <div class="button-wrapper">
+            <a href="https://www.behance.net/marksaladino" target="_blank">
+              <button class="btn btn-color-2 project-btn2">
+                <img class="button-logo" src="./assets/behance.png" alt="Behance Logo"> Behance
+              </button>
+            </a>
+          </div>
+          <div class="button-wrapper">
+            <a href="https://drive.google.com/drive/folders/103gru369rmr2dm7nzhTRtWRwQ1zoc2-y?usp=drive_link" target="_blank">
+              <button class="btn btn-color-2 project-btn2">
+                <img class="button-logo" src="./assets/drive.png" alt="Google Drive Logo"> Google Drive
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+<!-- CONTACT SECTION -->
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">mrkjshua@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/mark-saladino/"target="_blank">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+
+      <div class="footer__logo-container">
+        <img src="./assets/logo.png" alt="mrkgraphics logo" oncontextmenu="return false;" />
+      </div>
+      
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#whatido">What I Do?</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 MRKGRAPHICS. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+      var typedTextElement = document.querySelector(".typed-text");
+      var cursorElement = document.querySelector(".cursor");
+  
+      var typed = new Typed(typedTextElement, {
+        strings: ["CREATIVE DESIGNER",
+          "GRAPHIC DESIGNER",
+          "UI/UX DESIGNER",
+          "VIDEO EDITOR",
+          "FRONT END DEVELOPER",
+          "WEB DESIGNER"],
+        typeSpeed: 70,
+        backSpeed: 50,
+        loop: true,
+        onStringTyped: (arrayPos, self) => {
+          cursorElement.style.animation = "none"; // Disable animation during backspacing
+          setTimeout(() => {
+            cursorElement.style.animation = "blink 0.7s infinite";
+          }, 500); // Delay cursor animation restart after typing
+        }
+      });
+    </script>
+</div>
+  </body>
+</html>

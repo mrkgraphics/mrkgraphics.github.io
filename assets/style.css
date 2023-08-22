@@ -1,0 +1,647 @@
+/* GENERAL */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #1C1A1E;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: #F1EDE6;
+}
+
+p2 {
+  color: rgb(25, 25, 27);
+}
+
+/* TRANSITION */
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+/* DESKTOP NAV */
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1rem;
+}
+
+a {
+  color: #F1EDE6;
+  text-decoration: none;
+  text-decoration-color: #FBFBFB;
+}
+
+a:hover {
+  color: #FBB561;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: #FBB561;
+}
+
+.logo {
+  color: #FBB561;
+  font-size: 1.2rem;
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+/* HAMBURGER MENU */
+
+#hamburger-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: rgb(252, 252, 252);
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+.hamburger-icon span:first-child {
+  opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+/* SECTIONS */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  padding: 4rem;
+}
+
+/* Common section styles */
+section {
+  margin-bottom: 10rem; /* Add some spacing between sections */
+  width: 100%;
+  max-width: 1200px; /* Adjust as needed */
+  box-sizing: border-box;
+}
+
+.section-container {
+  display: flex;
+}
+
+/* PROFILE SECTION */
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 55vh;
+}
+
+.section__pic-container {
+  display: flex;
+  height: 500px;
+  width: 500px;
+  margin: auto 0;
+}
+
+.section__text {
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p {
+  font-weight: 600;
+  color: #F1EDE6;
+}
+
+.section__text__p1 {
+  text-align: center;
+}
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #FBB561;
+  position: relative;
+  display: inline-block; /* Display inline block for correct cursor positioning */
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  color: #FBB561;
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/* ICONS */
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+/* BUTTONS */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+  color: #F1EDE6;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-container {
+  gap: 1rem;
+}
+
+/* ABOUT SECTION */
+
+#about {
+  position: relative;
+  padding-top: 3rem;
+}
+
+#about .title {
+  color: #F1EDE6; /* Change to your desired title color */
+}
+
+#about .section__text__p1 {
+  color: #FF3874; /* Change to your desired color */
+  font-weight: 600;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+  display: flex;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: #FBFBFB;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.section__pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+/* WHAT I DO SECTION */
+
+#whatido {
+  position: relative;
+  padding-top: 3rem;
+  margin-top: 8vh;
+  margin-bottom: 8vh;
+}
+
+#whatido .title {
+  color: #F1EDE6; /* Change to your desired title color */
+}
+
+#whatido .section__text__p1 {
+  color: #FF6E38; /* Change to your desired color */
+  font-weight: 600;
+}
+
+.whatido-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem; /* Adjust margin as needed */
+  color: #F1EDE6;
+  text-align: center;
+}
+
+.text-container {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reversed {
+  display: flex;
+  flex-direction: row-reverse; /* Reverse the order of items for the second section */
+  align-items: center;
+  gap: 2rem;
+}
+
+
+.image-top {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.image-top img {
+  max-width: 30px; /* Adjust the size of the small image */
+  height: auto;
+}
+
+.exploration {
+  color: #FF6E38;
+  font-weight: bold;
+  font-size: 130%;
+  margin-bottom: 1rem;
+}
+
+/* ARROW ICON */
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+/* EXPERIENCE SECTION */
+
+#experience {
+  position: relative;
+  padding-top: 3rem;
+  margin-top: 8vh;
+}
+
+.experience-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  width: 10rem;
+  justify-content: left;
+  gap: 0.5rem;
+}
+
+article .icon {
+  cursor: default;
+}
+
+/* PROJECTS SECTION */
+
+#projects {
+  position: relative;
+  padding-top: 3rem;
+}
+
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 100%; /* Make the video full-width */
+  height: 100%; /* Make the video full-height */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+.project-video {
+  border-radius: 2rem;
+  width: 100%; /* Make the video full-width */
+  height: 100%; /* Make the video full-height */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+}
+
+.project-btn2 {
+  color: rgb(254, 254, 254);
+  border-color: rgb(163, 163, 163);
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.button-text {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.buttons-wrapper {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.button-wrapper {
+  text-align: center;
+}
+
+.button-wrapper:first-child {
+  margin-right: 1rem; /* Add spacing between the buttons */
+}
+
+.button-logo {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+}
+
+.project-btn {
+  min-width: 150px; /* Set a minimum width for the buttons */
+}
+
+.project-btn2 {
+  min-width: 150px; /* Set a minimum width for the buttons */
+}
+/* CONTACT */
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 3rem;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: (250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
+
+/* FOOTER SECTION */
+
+
+footer {
+  position: relative;
+  
+}
+
+.footer__logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  animation: float 3s ease-in-out infinite; /* Apply the floating animation */
+  pointer-events: none; /* Disable click and drag events */
+  user-select: none; /* Prevent text selection */
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Adjust the value for desired float height */
+  }
+}
+
+.footer__logo {
+  max-width: 100px;
+  height: auto;
+}
+
+footer p {
+  text-align: center;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+  /* Apply styles for screens up to 768px wide (typical tablet and mobile sizes) */
+  .whatido-container {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+  }
+
+  .text-container,
+  .image-container {
+    flex: none; /* Reset flex properties to control width */
+    width: 100%; /* Set width to 100% to take full width in mobile view */
+  }
+
+  .image-container {
+    margin-bottom: 1rem; /* Add some spacing between video and text */
+  }
+  
+}
