@@ -9,7 +9,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #181818;
+  background-color: #1B191D;
 }
 
 html {
@@ -195,6 +195,27 @@ section {
   height: 500px;
   width: 500px;
   margin: auto 0;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Hide default video controls */
+.video-container video {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  pointer-events: none; /* Prevent clicks on the video */
+  user-select: none; /* Prevent text selection */
 }
 
 .section__text {
@@ -529,14 +550,25 @@ article .icon {
   height: 300px;
   width: 300px;
   margin: auto 0;
-  overflow: hidden; /* Clip the image to fit the rounded container */
+  overflow: hidden; /* Clip the video to fit the rounded container */
 }
 
-/* Style the image inside the container */
-.project-video2 img {
-  object-fit: cover; /* Fit the image while maintaining aspect ratio */
-  width: 100%; /* Ensure the image covers the entire container */
-  height: 100%; /* Ensure the image covers the entire container */
+/* Style the video inside the container */
+.project-video2 video {
+  object-fit: contain; /* Fit the video while maintaining aspect ratio */
+  width: 100%; /* Ensure the video covers the entire container */
+  height: 100%; /* Ensure the video covers the entire container */
+  pointer-events: none; /* Prevent clicks on the video */
+  user-select: none; /* Prevent text selection */
+}
+
+/* Hide default video controls */
+.project-video2 video::-webkit-media-controls {
+  display: none;
+}
+
+.project-video2 video::-webkit-media-controls-enclosure {
+  display: none;
 }
 
 .project-title {
