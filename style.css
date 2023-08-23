@@ -9,7 +9,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #1C1A1E;
+  background-color: #181818;
 }
 
 html {
@@ -22,6 +22,14 @@ p {
 
 p2 {
   color: rgb(25, 25, 27);
+}
+
+.non-clickable-image {
+  pointer-events: none;
+}
+
+.user-not-selectable {
+  user-select: none;
 }
 
 /* TRANSITION */
@@ -395,6 +403,24 @@ section {
   align-items: center;
 }
 
+.image-container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 250px;
+  margin: auto;
+  overflow: hidden; /* Hide overflowing content */
+}
+
+/* Ensure the image scales proportionally to fit the container */
+.image-container2 img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
 .reversed {
   display: flex;
   flex-direction: row-reverse; /* Reverse the order of items for the second section */
@@ -493,6 +519,24 @@ article .icon {
   width: 100%; /* Make the video full-width */
   height: 100%; /* Make the video full-height */
   object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+.project-video2 {
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
+  margin: auto 0;
+  overflow: hidden; /* Clip the image to fit the rounded container */
+}
+
+/* Style the image inside the container */
+.project-video2 img {
+  object-fit: cover; /* Fit the image while maintaining aspect ratio */
+  width: 100%; /* Ensure the image covers the entire container */
+  height: 100%; /* Ensure the image covers the entire container */
 }
 
 .project-title {
