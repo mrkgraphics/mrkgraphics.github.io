@@ -78,55 +78,42 @@
     </section>
 
     <!-- About ME -->
-
-    <section id="about">
-      <p class="section__text__p1 non-clickable-image user-not-selectable">A BIT CONCEPT</p>
-      <h1 class="title non-clickable-image user-not-selectable">About Me</h1>
-      <div class="section-container non-clickable-image user-not-selectable">
-        <div class="section__pic-container">
-          <div class="video-container non-clickable-image user-not-selectable">
-            <video src="./assets/aboutme.mp4" alt="Logo Animation" loop muted autoplay playsinline>
-              Your browser does not support the video tag.
-            </video>
+<section id="about">
+  <p class="section__text__p1 non-clickable-image user-not-selectable">A BIT CONCEPT</p>
+  <h1 class="title non-clickable-image user-not-selectable">About Me</h1>
+  <div class="section-container non-clickable-image user-not-selectable">
+    <div class="aboutsection__pic-container">
+      <div class="aboutvideo-container non-clickable-image user-not-selectable">
+        <video src="./assets/aboutme.mp4" alt="Logo Animation" loop muted autoplay playsinline>
+          Your browser does not support the video tag.
+        </video>
       </div>
+    </div>
+    <div class="about-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+          <h3>Experience</h3>
+          <p2>5+ years <br />Junior Graphic Designer</p2>
         </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p2>5+ years <br />Junior Graphic Designer</p2>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p2>Bachelor of Science in Computer Engineering</p2>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Hey, I'm Mark! A Junior Graphic Designer with five years of design experience, plus two years leading creative teams as a Creative Manager. My joy lies in transforming ideas into visual wonders. Whether it's crafting logos or directing campaigns, I specialize in designs that leave a lasting impact. <br>
-              <br>
-              Looking for a professional partner who brings both happiness and expertise to the table? Look no further. Let's collaborate and elevate your vision to new heights!
-            </p>
-          </div>
+        <div class="details-container">
+          <img src="./assets/education.png" alt="Education icon" class="icon" />
+          <h3>Education</h3>
+          <p2>Bachelor of Science in Computer Engineering</p2>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#whatido'"
-      />
-    </section>
+      <div class="text-container">
+        <p>
+          Hey, I'm Mark! A Junior Graphic Designer with five years of design experience, plus two years leading creative teams as a Creative Manager. My joy lies in transforming ideas into visual wonders. Whether it's crafting logos or directing campaigns, I specialize in designs that leave a lasting impact.
+          <br>
+          <br>
+          Looking for a professional partner who brings both happiness and expertise to the table? Look no further. Let's collaborate and elevate your vision to new heights!
+        </p>
+      </div>
+    </div>
+  </div>
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#whatido'" />
+</section>
 
     <!-- What I Do? -->
 
@@ -361,6 +348,7 @@
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
+      <div class="container-wrapper">
       <div class="experience-details-container">
         <div class="about-containers">
 
@@ -376,10 +364,8 @@
             </div>
             <h2 class="experience-sub-title project-title">Logo Designs</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.behance.net/marksaladino'"
-              >
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="window.open('https://www.behance.net/marksaladino', '_blank');">
                 Behance
               </button>
               <button class="btn btn-color-2 project-btn" onclick="window.open('https://drive.google.com/drive/folders/1CRAM-cn_YGVuy48FhSKgALyTiWCVVm5z?usp=drive_link', '_blank');">
@@ -400,10 +386,8 @@
             </div>
             <h2 class="experience-sub-title project-title">Ui/Ux Web Designs</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.behance.net/marksaladino'"
-              >
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="window.open('https://www.behance.net/marksaladino', '_blank');">
                 Behance
               </button>
               <button class="btn btn-color-2 project-btn" onclick="window.open('https://drive.google.com/drive/folders/1ovo3o28mI2TZFb7NeF9qjr0dPrzpwkgl?usp=drive_link', '_blank');">
@@ -424,10 +408,8 @@
             </div>
             <h2 class="experience-sub-title project-title">SocMed Designs</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.behance.net/marksaladino'"
-              >
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="window.open('https://www.behance.net/marksaladino', '_blank');">
                 Behance
               </button>
               <button class="btn btn-color-2 project-btn" onclick="window.open('https://drive.google.com/drive/folders/1tzTMKNc7v4oM1m057q2kYma6-BB9jouW?usp=drive_link', '_blank');">
@@ -437,6 +419,7 @@
           </div>
         </div>
       </div>
+    </div>
 
       <div class="button-container">
         <p class="button-text">
