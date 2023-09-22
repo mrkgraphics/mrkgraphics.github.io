@@ -341,40 +341,42 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem; /* Add some gap between video and details in mobile view */
+    gap: 1.5rem;
   }
 
   .aboutvideo-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%; /* Full width for the video container */
+    width: 100%;
   }
 
-  .aboutvideo-container video {
-    width: 60%; /* Adjust the width for the desired size */
+  .aboutvideo-container img {
+    width: 70%; /* Adjust the width to fit the mobile screen */
     max-width: 100%;
     height: auto;
+    padding-top: 20px; /* Add top padding */
+    padding-bottom: 40px; /* Add bottom padding */
   }
 
   .about-details-container {
-    text-align: center; /* Center align the text in mobile view */
+    text-align: center;
   }
 
   .about-containers {
     flex-direction: column;
-    align-items: center; /* Center align the details in mobile view */
+    align-items: center;
     gap: 1.5rem;
   }
 
   .arrow {
-    position: static; /* Remove absolute positioning in mobile view */
-    margin-top: 1.5rem; /* Add some spacing */
-    transform: none; /* Reset transform */
+    position: static;
+    margin-top: 1.5rem;
+    transform: none;
   }
 
   .details-container {
-    border: none; /* Remove border in mobile view */
+    border: none;
   }
 }
 
@@ -383,7 +385,7 @@ section {
 .aboutsection__pic-container {
   display: flex;
   margin: auto 0;
-  gap: 0rem; /* Add some gap between video and details */
+  gap: 0rem;
 }
 
 .aboutvideo-container {
@@ -391,20 +393,20 @@ section {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  width: 400px; /* Adjust the width for the desired size */
+  width: 400px;
 }
 
-.aboutvideo-container video {
+.aboutvideo-container img {
   max-width: 100%;
   height: auto;
 }
 
 #about .title {
-  color: #F1EDE6; /* Change to your desired title color */
+  color: #F1EDE6;
 }
 
 #about .section__text__p1 {
-  color: #FF3874; /* Change to your desired color */
+  color: #FF3874;
   font-weight: 600;
 }
 
@@ -449,10 +451,10 @@ section {
   height: 80%;
 }
 
-.section__pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
+.section__pic-container img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
 }
 
 
